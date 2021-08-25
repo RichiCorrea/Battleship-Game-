@@ -26,3 +26,10 @@
   background-color: lightgreen;
   margin: 20px;
 }
+
+.grid-display {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background-color: yellow;
+}
