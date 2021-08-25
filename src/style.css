@@ -33,3 +33,11 @@
   margin: 20px;
   background-color: yellow;
 }
+
+.destroyer-container {
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  margin: 10px;
+  display: flex;
+}
