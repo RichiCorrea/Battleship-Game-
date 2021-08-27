@@ -300,12 +300,24 @@ document.addEventListener('DOMContentLoaded', () => {
         cpuCarrierCount = 10
       }
       if ((destroyerCount + submarineCount + cruiserCount + battleshipCount + carrierCount) === 50) {
-        infoDisplay.innerHTML = "YOU WIN"
-        gameOver()
+        Swal.fire({
+          icon: 'success',
+          title: 'You win!',
+          showConfirmButton: true,
+          confirmButtonText: 'Start again!',
+      }).then((result) => {
+        window.location.reload();
+      })
       }
       if ((cpuDestroyerCount + cpuSubmarineCount + cpuCruiserCount + cpuBattleshipCount + cpuCarrierCount) === 50) {
-        infoDisplay.innerHTML = "COMPUTER WINS"
-        gameOver()
+        Swal.fire({
+          icon: 'error',
+          title: 'You lose!',
+          showConfirmButton: true,
+          confirmButtonText: 'Revenge!',
+      }).then((result) => {
+        window.location.reload();
+      })
       }
     }
   
